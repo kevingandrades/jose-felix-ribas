@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { GlobalState } from '../../../GlobalState';
 import Loading from '../utils/loading/Loading';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { icon } from '@fortawesome/fontawesome-svg-core/import.macro';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 const ImageModal = ({ image, close }) => {
 	return (
@@ -53,7 +53,7 @@ const Gallery = () => {
 							pics.length > itemLimit ?
 								<div className="overlay__fade">
 									<div className='showMore' onClick={showMore}>
-										<FontAwesomeIcon icon={icon({ name: 'chevron-down', style: 'solid' })} />
+										<FontAwesomeIcon icon={ faChevronDown } />
 									</div>
 								</div>
 							:

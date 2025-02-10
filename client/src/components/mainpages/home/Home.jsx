@@ -3,7 +3,7 @@ import FeaturedPost from '../utils/featured_post/FeaturedPost';
 import { GlobalState } from '../../../GlobalState';
 import Loading from '../utils/loading/Loading';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { icon } from '@fortawesome/fontawesome-svg-core/import.macro';
+import { faArrowRightLong, faSortDown } from '@fortawesome/free-solid-svg-icons';
 import { Link, useNavigate } from 'react-router-dom';
 
 const Latest = ({ news, arrow }) => {
@@ -264,8 +264,8 @@ const Home = () => {
 		getNews();
 	}, []);
 
-	const arrowRightLong = <FontAwesomeIcon icon = { icon({ name: 'arrow-right-long', style: 'solid' }) } />;
-	const sortDown = <FontAwesomeIcon icon = { icon({ name: 'sort-down', style: 'solid' }) } viewBox="0 280 320 205"/>;
+	const arrowRightLong = <FontAwesomeIcon icon = { faArrowRightLong } />;
+	const sortDown = <FontAwesomeIcon icon = { faSortDown } viewBox="0 280 320 205" />;
 
 	return (
 		<>

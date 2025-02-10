@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { icon } from '@fortawesome/fontawesome-svg-core/import.macro';
+import { faSortDown, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { GlobalState } from '../../../GlobalState';
 import Loading from '../utils/loading/Loading';
 
@@ -39,7 +39,7 @@ const ByCategory = () => {
 
 	const filterByCategory = news.filter(post => post.category === selected);
 
-	const sortDown = <FontAwesomeIcon icon = { icon({ name: 'sort-down', style: 'solid' }) } viewBox="0 280 320 205"/>;
+	const sortDown = <FontAwesomeIcon icon = { faSortDown } viewBox="0 280 320 205"/>;
 
 	return (
 		<div className='posts__container byCategory'>
@@ -94,7 +94,7 @@ const ByCategory = () => {
 							filterByCategory.length > itemLimit ?
 								<div className='showMore__container'>
 									<div className='showMore' onClick={showMore}>
-										<FontAwesomeIcon icon={icon({ name: 'chevron-down', style: 'solid' })} />
+										<FontAwesomeIcon icon={ faChevronDown } />
 									</div>
 								</div>
 							:

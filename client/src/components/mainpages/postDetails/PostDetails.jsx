@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import 'react-quill/dist/quill.snow.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { icon } from '@fortawesome/fontawesome-svg-core/import.macro';
+import { faNewspaper } from '@fortawesome/free-solid-svg-icons';
 import { GlobalState } from '../../../GlobalState';
 import Loading from '../utils/loading/Loading';
 
@@ -49,7 +49,7 @@ const PostDetails = () => {
 				<div className="postDetails__info--category">{category}</div>
 				<div className="postDetails__info--title">{title}</div>
 				<div className="postDetails__info--date">
-					<FontAwesomeIcon icon = { icon({ name: 'newspaper', style: 'solid' }) } />
+					<FontAwesomeIcon icon = { faNewspaper } />
 					<span className='date'>{newDate} - {time}</span>
 				</div>
 			</div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { icon } from '@fortawesome/fontawesome-svg-core/import.macro';
+import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 const Contact = () => {
 
@@ -9,17 +9,17 @@ const Contact = () => {
 		{
 			label: "Facebook",
 			url: 'https://www.facebook.com/profile.php?id=100063777708388',
-			icon: <FontAwesomeIcon icon = { icon({ name: 'facebook', style: 'brands' }) } />
+			icon: <FontAwesomeIcon icon = { faFacebook } />
 		},
 		{
 			label: "Instagram",
 			url: 'https://www.instagram.com/gejosefelix/',
-			icon: <FontAwesomeIcon icon = { icon({ name: 'instagram', style: 'brands' }) } />
+			icon: <FontAwesomeIcon icon = { faInstagram } />
 		},
 		{
 			label: "Twitter",
 			url: 'https://twitter.com/ebjosefribas',
-			icon: <FontAwesomeIcon icon = { icon({ name: 'twitter', style: 'brands' }) } />
+			icon: <FontAwesomeIcon icon = { faTwitter } />
 		}
 	];
 
