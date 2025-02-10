@@ -113,14 +113,14 @@ const Footer = () => {
 				<span>por</span>
 
 				<Link
-					to = 'https://github.com/kevingjs'
+					to = 'https://github.com/kevingandrades/'
 					target = "_blank"
 					rel = "noopener noreferrer"
 				>
 					Keving Andrades
 				</Link>
 				
-				<span>{new Date().getFullYear()}</span>
+				<span>{ new Date().getFullYear() }</span>
 
 			</div>
 
