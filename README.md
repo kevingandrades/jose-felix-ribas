@@ -24,9 +24,9 @@
 ![express-badge]
 ![mongodb-badge]
 
-<a href="https://github.com/kevingjs/jose-felix-ribas/issues">Report bug</a>
+<a href="https://github.com/kevingandrades/jose-felix-ribas/issues">Report bug</a>
 ·
-<a href="https://github.com/kevingjs/jose-felix-ribas/issues">Suggest something</a>
+<a href="https://github.com/kevingandrades/jose-felix-ribas/issues">Suggest something</a>
 
 </div>
 
